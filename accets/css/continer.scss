@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&display=swap");
+
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    height: 1600px;
+    width: 100%;
+    padding: 0 5% 0 3%;
+    flex-direction: column;
+    .container__row-1{
+        height: 700px;
+        margin: 0 0 85px 0;
+        .container__date{
+            height: 100px;
+            display: flex;
+            justify-content: center;
+        }
+        .container__object-Section{
+            display: flex;
+            height: 550px;
+            .container__object-rows{
+                margin: 15px 3%;
+
+                width: 550px;
+                height: 585px;               
+                background: #FFFFFF;
+                box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.1);
+                border-radius: 20px;
+                div{
+                    height: 74px;
+                    border-bottom: 1px solid #EDEDED;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    padding: 12px 14px;
+                    justify-content: space-between;
+
+                }
+                .container__control{
+                    padding: 12px 14px;
+                    height: 100px;
+                    margin: 2px 0 0 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    b{
+                        font-style: italic;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 21px;
+                        /* identical to box height */
+                        
+                        
+                        color: #2D3134;
+                        
+                    }
+                    button{
+                        margin: 0 0 36px 0;
+                        background-color: white;
+                        width: 161px;
+                        height: 35px;
+                        border: 1px solid #717579;
+                        box-sizing: border-box;
+                        border-radius: 14px;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 18px;  
+                        color: #2D3134;
+                    }
+                }
+                .container__title{
+                    display: flex;
+                    justify-content: center;
+                    h5{
+                        margin: 16px 0 0 0;                        
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #2D3134;
+
+                    }                    
+                }
+            }
+        }
+    }
+
+    .container__row-2{
+        height: 903px;
+        margin: 0 0 85px 0;
+        background: #FFFFFF;
+        box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        .container__carUsers-title{
+            display: flex;
+            justify-content: left;
+            padding: 28px 90px 15px;
+            border-bottom: 1px solid #F4F4F4;
+            span{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 19px;
+                line-height: 24px;
+                /* identical to box height */
+                
+                
+                /* Theme Color/Black */
+                
+                color: #2D3134;
+                margin: 0 230px 0 0 ;
+            }
+            b{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 19px;
+                line-height: 24px;
+                /* identical to box height */
+                
+                
+                /* Theme Color/Black */
+                
+                color: #2D3134;
+                
+            }
+        }
+        .container__carUsers-info{
+            height: 125px;
+
+            div{
+                padding: 28px 90px 15px;
+
+            }
+        }
+    }
+    .container__row-3{
+        background: #FFFFFF;
+        box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        .container__foHome-title{
+            height: 70.4px;
+            background: #FFFFFF;
+            border-radius: 20px 20px 0px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #F4F4F4;
+            span{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                /* identical to box height */
+                
+                
+                /* Theme Color/Black */
+                
+                color: #2D3134;
+                
+            }
+            img{
+                width: 22px;
+                height: 22px;
+            }
+        }
+        .container__foHome-users{
+
+            div{
+                margin: 5px 0;
+                border-bottom: 1px solid #F4F4F4;
+
+                height: 50.28px;
+                align-items: center;
+                display: flex;
+                span{
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 21px;
+                    /* identical to box height */
+                    
+                    
+                    color: #2D3134;
+                    
+                }
+            }
+            section{
+                margin: 5px 0;
+
+                height: 50.28px;
+                align-items: center;
+                display: flex;
+                span{
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 21px;
+                    /* identical to box height */
+                    
+                    
+                    color: #2D3134;
+                    
+                }
+            }
+        }
+    }
+}
+
+
+.container__row-2-mobi{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 450px;
+    margin: 0 0 85px 0;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    .container__carUsers-title{
+        display: flex;
+        justify-content: left;
+        padding: 28px 11px 15px;        
+        border-bottom: 1px solid #F4F4F4;
+        span{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 19px;
+            line-height: 24px;
+            /* identical to box height */
+            
+            
+            /* Theme Color/Black */
+            
+            color: #2D3134;
+            margin: 0 110px 0 0 ;
+        }
+        b{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 19px;
+            line-height: 24px;
+            /* identical to box height */
+            
+            
+            /* Theme Color/Black */
+            
+            color: #2D3134;
+            
+        }
+    }
+    .container__carUsers-info{
+        height: 125px;
+
+        div{
+            padding: 28px 0 0 15px;
+
+        }
+    }
+}
+
+
+.container__object-Info{
+    display: flex;
+    border: none;
+    padding: 10px;
+}
+
+.container__object-controle{
+    display: flex;
+    border: none;
+    padding: 10px;
+
+    img{
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.container__barenn{
+    display: flex;
+    align-items: center;
+}
+
+.person-name{
+    margin: 0 150px 0 25px;
+}
+
+.container__client{
+    margin: 0 100px 0 0 ;
+    display: flex;
+    align-items: center;
+}
+
+.header-mobi{
+    display: none;
+    width: 375px;
+    padding: 10px;
+    border-bottom: 1px solid #EDEDED;
+    height: 61px;
+    justify-content: space-between;
+    img{
+
+    }
+}
+
+.mobi{
+    width: 280px;
+    display: none;
+}
+

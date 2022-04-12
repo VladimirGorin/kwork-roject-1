@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&display=swap");
+
+.pannel{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 365px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    .pannel__logoBox{
+        height: 120px;
+        padding: 15px 0 0 30px;
+    }
+    .pannel__adminInfo{
+        height: 218px;
+        padding: 15px 0 0 30px;
+        .pannel__admin-logo{
+
+        }
+        .pannel__admin-info{
+            h5{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 36px;
+                /* identical to box height */
+
+
+                /* Theme Color/Black */
+
+                color: #2D3134;
+                margin: 0;
+                padding: 0;
+            }
+            span{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                /* identical to box height */
+                
+                
+                /* Theme Color / Grey 1 */
+                
+                color: #717579;
+                
+            }
+        }
+    }
+    .pannel__nav{
+        height: 270px;
+        a{
+            
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            /* identical to box height */
+
+
+            color: #717579;
+             text-decoration: none;
+        }
+        .pannel__navigaton{
+            height: 60px;
+            background-color: #ffff;
+            padding: 0 30px;
+
+            .pannel__navButtons{
+                justify-content: left;
+                display: flex;
+                padding: 15px;
+                div{
+                    margin-right: 25px;
+                }
+            }
+
+        }
+    }
+}
+
+#selected-Element{
+    color: #9C7034;
+}

@@ -1,0 +1,131 @@
+.container__row-3{
+    height: 855px;
+
+}
+
+.container__foHome-title{
+    padding: 0 30px 0 100px;
+}
+.container__foHome-users{
+    div{
+        padding: 0 30px 0 100px;
+    }
+    section{
+        padding: 0 30px 0 100px;
+
+    }
+}
+
+#menu{
+    position: fixed;
+    left: 0;
+    
+    top: 0;
+    z-index: 999999;
+    padding: 0;
+}
+
+.pannel .pannel__nav .pannel__navigaton {
+    height: 50px;
+    background-color: #ffff;
+    padding: 0 30px;
+}
+
+.save{
+    display: none;
+}
+
+.header-mobi{
+    display: none;
+}
+
+@media screen and (max-width: 425px) {
+    .pannel{
+        display: none;
+    }
+    .header-mobi{
+        padding: 6px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: space-between;
+
+
+        height: 52px;
+        position: absolute;
+        z-index: 99999;
+        width: 100%;
+        background: white;
+
+    }
+    .save{
+        display: block;
+    }
+    #w1{
+        display: none;
+    }
+    #w2{
+        display: none;
+    }
+    #w3{
+        display: none;
+    }
+    #w4{
+        display: none;
+    }
+    #w5{
+        display: none;
+    }
+    #w6{
+        display: none;
+    }
+
+    .desktop{
+        display: none;
+    }
+    .mobi{
+        display: block;
+    }
+
+    .container__foHome-users{
+        div{
+            padding: 0 30px 0 10px;
+        }
+        section{
+            padding: 0 30px 0 10px;
+
+        }
+    }
+    
+    .container__row-2{
+        display: none;
+    }
+    .container__row-3{
+        position: absolute;
+        top: 2518px;
+    
+        display: block;
+        width: 350px;
+        height: 355px;
+        .container__foHome-title{
+            padding: 0 30px 0 10px;
+        }
+    }
+    .container__foHome-title{
+        padding: 0 30px 0 10px;
+    }
+    .container__object-Section{
+        display: flex;
+        height: 550px;
+        flex-wrap: wrap;
+    }
+    .container__object-rows{
+        margin: 15px 3%;
+    }
+    .container__row-2-mobi{
+        display: block;
+        left: 15px;
+        top: 2035px;
+    }
+}
+

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./accets/css/container-4.css">
+    <link rel="stylesheet" href="./accets/css/global.css">
+    <link rel="stylesheet" href="./accets/css/panel.css">
+    <link rel="stylesheet" href="./accets/css/adaptive.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+
+    <div style="display: none;" id="menu" class="pannel">
+        <a onclick="closeMenu()" href="#"><img style="top: 12px;position: absolute;width: 13px;height: 13px;/* float: right; */right: 12px;" src="/accets/image/closeElement.png" alt=""></a>
+        <div class="pannel__logoBox">
+            <img src="./accets/image/logo.png" alt="">
+        </div>
+        <div class="pannel__adminInfo">
+            <div class="pannel__admin-logo">
+                <img src="./accets/image/personLogo.png" alt="">
+            </div>
+            <div class="pannel__admin-info">
+                <h5>ADMIN</h5>
+                <span>user@mail.ru</span>
+            </div>
+        </div>
+        <div class="pannel__nav">
+            <a href="/index.html">
+                <div class="pannel__navigaton">
+                    <div class="pannel__navButtons">
+                        <div>
+                            <img src="./accets/image/layout 1.png" alt="">
+                        </div>
+                        <span>Объекты</span>
+                    </div>
+                </div>
+            </a>
+            <a href="/users.html">
+                <div class="pannel__navigaton">
+                    <div class="pannel__navButtons">
+                        <div>
+                            <img src="./accets/image/menu-Icons/people (3) 1 glod.png" alt="">
+                        </div>
+                        <span id="selected-Element">Рабочие</span>
+                    </div>
+                </div>
+            </a>
+            <a href="/Auto.html">
+                <div class="pannel__navigaton">
+                    <div class="pannel__navButtons">
+                        <div>
+                            <img src="./accets/image/menu-Icons/Group.png" alt="">
+                        </div>
+                        <span>Автомобили</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="pannel__navigaton">
+                    <div class="pannel__navButtons">
+                        <div>
+                            <img src="./accets/image/menu-Icons/graph 1.png" alt="">
+                        </div>
+                        <span >Отчетность</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <header class="header-mobi">
+        <a href="#"><img src="./accets/image/mobi-menu/Frame 4.png" alt="logo"></a>
+
+        <a onclick="opennMenu()" href="#"><img src="./accets/image/mobi-menu/menu 1.png" alt="menu"></a>
+    </header>
+
+    <img class="save" style="z-index: 99999;" src="./accets/image/Frame 20.png" alt="">
+
+    
+    <div id="w1" class="wrpaper">
+        <div class="pannel">
+            <div class="pannel__logoBox">
+                <img src="./accets/image/logo.png" alt="">
+            </div>
+            <div class="pannel__adminInfo">
+                <div class="pannel__admin-logo">
+                    <img src="./accets/image/personLogo.png" alt="">
+                </div>
+                <div class="pannel__admin-info">
+                    <h5>ADMIN</h5>
+                    <span>user@mail.ru</span>
+                </div>
+            </div>
+            <div class="pannel__nav">
+                <a href="/index.html">
+                    <div class="pannel__navigaton">
+                        <div class="pannel__navButtons">
+                            <div>
+                                <img src="./accets/image/layout 1.png" alt="">
+                            </div>
+                            <span>Объекты</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="/users.html">
+                    <div class="pannel__navigaton">
+                        <div class="pannel__navButtons">
+                            <div>
+                                <img src="./accets/image/menu-Icons/people (3) 1 glod.png" alt="">
+                            </div>
+                            <span id="selected-Element">Рабочие</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="/Auto.html">
+                    <div class="pannel__navigaton">
+                        <div class="pannel__navButtons">
+                            <div>
+                                <img src="./accets/image/menu-Icons/Group.png" alt="">
+                            </div>
+                            <span>Автомобили</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="pannel__navigaton">
+                        <div class="pannel__navButtons">
+                            <div>
+                                <img src="./accets/image/menu-Icons/graph 1.png" alt="">
+                            </div>
+                            <span >Отчетность</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container__create-Obj">
+                <h2>Список рабочих</h2>
+                <span>У вас есть право...</span>
+
+                <button onclick="redirectUser()" >Добавить рабочего</button>
+            </div>
+            <div class="container__row-1">
+                <div class="container__box-1">
+                    <div class="container__header">
+                        <h1>Рабочие</h1>
+                        <h2>Автомобили</h2>
+                        <h3>Пассажиры</h3>
+                    </div>
+                    <div class="container__content">
+                        <a  onclick="addUser()" href="#">
+                            <div>
+                                <section class="container__user">
+                                    <img src="./accets/image/placeholder.png" alt="">
+    
+                                    <section class="user-info">
+                                        <h1>Misha</h1>
+                                        <span>Водитель</span>
+                                    </section>
+                                    <img style="width: 38px;height: 38px;" src="index.html" alt="">
+                                </section>
+                                <section class="container__car">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Ford</option>
+                                        <option value="1">Ford</option>
+                                        <option value="2">Ford</option>
+                                        <option value="3">Ford</option>
+                                    </select>
+                                </section>
+                                <section class="container__sends">
+                                    <span>Name</span>
+                                    <span>Name</span>
+                                    <span>Name</span>
+                                    <img src="./accets/image/more 2.png" alt="">
+                                </section>
+                            </div>
+                        </a>
+
+                        <a  onclick="addUser()" href="#">
+                            <div>
+                                <section class="container__user">
+                                    <img src="./accets/image/placeholder.png" alt="">
+    
+                                    <section class="user-info">
+                                        <h1>Misha</h1>
+                                        <span>Водитель</span>
+                                    </section>
+                                    <img style="width: 38px;height: 38px;" src="./accets/image/redactor.png" alt="">
+                                </section>
+                                <section class="container__car">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Ford</option>
+                                        <option value="1">Ford</option>
+                                        <option value="2">Ford</option>
+                                        <option value="3">Ford</option>
+                                    </select>
+                                </section>
+                                <section class="container__sends">
+                                    <span>Name</span>
+                                    <span>Name</span>
+                                    <span>Name</span>
+                                    <img src="./accets/image/more 2.png" alt="">
+                                </section>
+                            </div>
+                        </a>
+                        
+                        <a  onclick="addUser()" href="#">
+                            <div>
+                                <section class="container__user">
+                                    <img src="./accets/image/placeholder.png" alt="">
+    
+                                    <section class="user-info">
+                                        <h1>Misha</h1>
+                                        <span>Водитель</span>
+                                    </section>
+                                    <img style="width: 38px;height: 38px;" src="./accets/image/redactor.png" alt="">
+                                </section>
+                                <section class="container__car">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Ford</option>
+                                        <option value="1">Ford</option>
+                                        <option value="2">Ford</option>
+                                        <option value="3">Ford</option>
+                                    </select>
+                                </section>
+                                <section class="container__sends">
+                                    <span>Name</span>
+                                    <span>Name</span>
+                                    <span>Name</span>
+                                    <img src="./accets/image/more 2.png" alt="">
+                                </section>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container__row-3">
+                    <div class="container__foHome-title">
+                        <span>Выходные / На больничном</span>
+                        <img src="./accets/image/more 2.png" alt="">
+                    </div>
+                    <div class="container__foHome-users">
+                        <div>
+                            <span>Иванов И.П.</span>
+                        </div>
+                        <div>
+                            <span>Иванов И.П.</span>
+                        </div>
+                        <div>
+                            <span>Иванов И.П.</span>
+                        </div>
+                        <div>
+                            <span>Иванов И.П.</span>
+                        </div>
+                        <section>
+                            <span>Иванов И.П.</span>
+                            <img src="./accets/image/redactor.png" alt="">
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="    display: none;" id="addPopup" class="popup-add">
+        <div class="popup__body">
+            <a href="#"  onclick="closePopups()" ><img id="closeElement" src="./accets/image/closeElement.png" alt=""></a>
+            <div class="popup__inputs">
+                <div class="popup__logo">
+                    <img src="./accets/image/proile.png" alt="">
+                </div>
+                <form>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Михаил Викторович Петров">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Паспорт № 70 50 629">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Город: Москва">
+                     <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Номер телефона: +7 929 123-45-67 ">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Статус проживания: Указание статуса">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Специальность: Водитель">
+                    <textarea placeholder="Свободная информация о работнике" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <button>Сохранить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: none;" id="redirectPopup" class="popup-redirect">
+        <div class="popup__body">
+            <a href="#"  onclick="closePopups()" ><img id="closeElement" src="./accets/image/closeElement.png" alt=""></a>
+            <div class="popup__inputs">
+                <div class="popup__logo">
+                    <h1>Добавить рабочего</h1>
+                </div>
+                <form>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ф.И.О">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Паспорт №">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Город">
+                     <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Номер телефона">
+                     <input style="padding: 4px;" class="form-control" type="file" id="formFile">
+                     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Статус проживания">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Специальность">
+                    <textarea placeholder="Свободная информация о работнике" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <button>Добавить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./accets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
